@@ -8,3 +8,4 @@
 <br>
 
 * Atualmente não público.
+* Pasta Venv está presente devido a sincronização com Replit.com

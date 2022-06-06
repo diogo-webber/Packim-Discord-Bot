@@ -3,6 +3,10 @@ from discord_slash.cog_ext import cog_slash
 import discord
 from operator import itemgetter
 
+from PIL import Image
+from io import BytesIO
+import requests
+
 
 import utils.bank_utils as bank_utils
 import utils.utils as utils

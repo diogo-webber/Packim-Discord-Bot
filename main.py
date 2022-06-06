@@ -1,5 +1,6 @@
 import discord
 from discord_slash import SlashCommand
+#from discord_slash.utils.manage_commands import remove_all_commands
 from discord.ext import commands
 import os
 
@@ -21,7 +22,7 @@ async def on_ready():
 	os.system("clear")
 	print('\n ' + 8*"-" +'  BOT OPERACIONAL  ' + 7*'-')
 	
-	#await remove_all_commands(bot_id=865579294368858182, guild_ids=[844681140744617984, constants.GUILD_ID], bot_token=os.environ['TOKEN']) # Packims 1
+	#await remove_all_commands(bot_id=865579294368858182, guild_ids=[constants.GUILD_ID], bot_token=os.environ['BOT_TOKEN']) # Packims 1
 
 
 # kill 1 in shell for change IP adress
@@ -71,6 +72,7 @@ bot.load_extension("slash_commands.codes_cmd")
 bot.load_extension("slash_commands.console_cmds_cmd")
 bot.load_extension("slash_commands.points_cmds")
 bot.load_extension("slash_commands.others_cmds")
+bot.load_extension("slash_commands.speech_bubble_meme")
 bot.load_extension("tasks.send_charade")
 bot.load_extension("tasks.bot_status")
 #bot.load_extension("tasks.cat_picture")
